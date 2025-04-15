@@ -21,5 +21,11 @@ public class JavaStreamTest {
                 .orElse(0.0);
 
         System.out.println("Average Salary: " + averageSalary);
+
+        // Find the employee with the highest salary
+        Employee highestSalaryEmployee = employees.stream()
+                .max((e1, e2) -> Double.compare(e1.getSalary(), e2.getSalary()))
+                .orElse(null);
+        System.out.println("Employee with highest salary: " + highestSalaryEmployee.getName() + " - " + highestSalaryEmployee.getSalary());
     }
 }
