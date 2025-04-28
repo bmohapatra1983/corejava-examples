@@ -5,6 +5,9 @@ interface MyFunctionalInterface {
     static void display() {
       System.out.println("Display World!");
     }
+    default void hi(){
+        System.out.println("hi");
+    }
 }
 
 public class FunctionalInterfaceTest implements MyFunctionalInterface {
@@ -21,5 +24,6 @@ public class FunctionalInterfaceTest implements MyFunctionalInterface {
         obj.show();
         obj.display();
         MyFunctionalInterface.display();
+        obj.hi();
     }
 }
