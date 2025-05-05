@@ -12,7 +12,5 @@ public class OddEvenFromList {
         Map<String, List<Integer>> collect = IntStream.of(arr).boxed()
                 .collect(Collectors.groupingBy(n -> n % 2 == 0 ? "even" : "odd"));
         System.out.println(collect);
-
-
     }
 }
