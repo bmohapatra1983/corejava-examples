@@ -9,5 +9,6 @@ public class Employee {
     private Long id;
     private String name;
     private float salary;
+    private String department;
     private int age;
 }

@@ -9,10 +9,10 @@ public class JavaStreamTest {
     public static void main(String[] args) {
         // Create a list of employees
         List<Employee> employees = new ArrayList<>();
-        employees.add(new Employee(1L, "John Doe", 50000, 30));
-        employees.add(new Employee(2L, "Jane Smith", 60000, 25));
-        employees.add(new Employee(3L, "Mike Johnson", 70000, 35));
-        employees.add(new Employee(4L, "Emily Davis", 80000, 28));
+        employees.add(new Employee(1L, "John Doe", 50000, "IT",30));
+        employees.add(new Employee(2L, "Jane Smith", 60000,"Marketing", 25));
+        employees.add(new Employee(3L, "Mike Johnson", 70000,"Admin", 35));
+        employees.add(new Employee(4L, "Emily Davis", 80000, "IT",28));
 
         // Calculate the average salary of all employees
         double averageSalary = employees.stream()
